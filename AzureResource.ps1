@@ -1,3 +1,5 @@
 az login
-New-AzResourceGroup -Name GitDemo -Location "east-us"
-Get-AzResourceGroup -Name "GitDemo"
+$location = "Central-US"
+$name = "GitDemo"
+New-AzResourceGroup -Name $name -Location $location
+Get-AzResourceGroup -Name $name
